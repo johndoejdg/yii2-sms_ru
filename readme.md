@@ -1,4 +1,4 @@
-# Yii2-sms_ru
+# yii2-sms_ru
 
 [Yii2](http://www.yiiframework.com) extension for [sms.ru](http://sms.ru)
 
