@@ -28,5 +28,6 @@
 			"Zelenin\\": ""
 		}
 	},
+	"target-dir": "Zelenin",
 	"minimum-stability": "stable"
 }
