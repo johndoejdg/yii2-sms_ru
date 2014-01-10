@@ -5,7 +5,7 @@
 	"type": "yii2-extension",
 	"keywords": ["yii", "yii2", "sms", "sms.ru"],
 	"homepage": "https://github.com/zelenin/yii2-sms_ru",
-	"time": "2014-01-03",
+	"time": "2014-01-10",
 	"license": "MIT",
 	"authors": [
 		{
@@ -20,14 +20,13 @@
 		"source": "https://github.com/zelenin/yii2-sms_ru"
 	},
 	"require": {
-		"php": ">=5.3.0",
-		"zelenin/smsru": "1.4.0"
+		"php": ">=5.4.0",
+		"zelenin/smsru": "1.4.1"
 	},
 	"autoload": {
-		"psr-0": {
+		"psr-4": {
 			"Zelenin\\": ""
 		}
 	},
-	"target-dir": "Zelenin",
 	"minimum-stability": "stable"
 }

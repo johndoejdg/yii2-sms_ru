@@ -1,5 +1,4 @@
 <?php
-
 namespace Zelenin;
 
 use yii\base\Component;
@@ -21,6 +20,12 @@ class Sms extends Component
 		parent::init();
 	}
 
+	/**
+	 * @param string $name
+	 * @param array  $parameters
+	 *
+	 * @return mixed
+	 */
 	public function __call( $name, $parameters )
 	{
 		if ( method_exists( $this->sms, $name ) ) {
