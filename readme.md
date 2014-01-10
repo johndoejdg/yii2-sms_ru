@@ -38,7 +38,7 @@ or:
 
 SMS sending:
 
-    \Yii::$app()->sms->sms_send( '<number>', '<text>' );
+    \Yii::$app->sms->sms_send( '<number>', '<text>' );
 
 [Full methods list](https://github.com/zelenin/sms_ru/blob/master/readme.md)
 
