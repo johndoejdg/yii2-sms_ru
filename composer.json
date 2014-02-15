@@ -1,0 +1,33 @@
+{
+	"name": "zelenin/yii2-sms_ru",
+	"description": "Yii2 extension for sms.ru",
+	"version": "0.0.2",
+	"type": "yii2-extension",
+	"keywords": ["yii", "yii2", "sms", "sms.ru"],
+	"homepage": "https://github.com/zelenin/yii2-sms_ru",
+	"time": "2014-02-16",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Aleksandr Zelenin",
+			"email": "aleksandr@zelenin.me",
+			"homepage": "http://zelenin.me",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/zelenin/yii2-sms_ru/issues",
+		"source": "https://github.com/zelenin/yii2-sms_ru"
+	},
+	"require": {
+		"php": ">=5.4.0",
+		"yiisoft/yii2": "*",
+		"zelenin/smsru": "1.4.2"
+	},
+	"autoload": {
+		"psr-4": {
+			"Zelenin\\": ""
+		}
+	},
+	"minimum-stability": "stable"
+}
