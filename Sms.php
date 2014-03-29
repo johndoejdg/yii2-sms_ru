@@ -1,7 +1,11 @@
 <?php
-namespace Zelenin;
+/**
+ * @copyright Aleksandr Zelenin <aleksandr@zelenin.me>
+ */
+namespace Zelenin\yii\extensions;
 
 use yii\base\Component;
+use Zelenin\smsru;
 
 class Sms extends Component
 {
@@ -12,11 +16,9 @@ class Sms extends Component
 
     public function init()
     {
-        if (!empty($this->login) && !empty($this->password)) {
-            $this->sms = new smsru($this->api_id, $this->login, $this->password);
-        } else {
-            $this->sms = new smsru($this->api_id);
-        }
+        $this->sms = (!empty($this->login) && !empty($this->password))
+            ? new smsru($this->api_id, $this->login, $this->password)
+            : new smsru($this->api_id);
         parent::init();
     }
 
@@ -28,10 +30,8 @@ class Sms extends Component
      */
     public function __call($name, $parameters)
     {
-        if (method_exists($this->sms, $name)) {
-            return call_user_func_array(array($this->sms, $name), $parameters);
-        } else {
-            return call_user_func_array(array($this, $name), $parameters);
-        }
+        return method_exists($this->sms, $name)
+            ? call_user_func_array(array($this->sms, $name), $parameters)
+            : call_user_func_array(array($this, $name), $parameters);
     }
 }

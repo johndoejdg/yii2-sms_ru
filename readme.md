@@ -21,14 +21,14 @@ to the require section of your composer.json
 Add code in your components section of application configuration:
 
 	'sms' => [
-		'class' => 'Zelenin\Sms',
+		'class' => 'Zelenin\yii\extensions\Sms',
 		'api_id' => '<api_id>'
 	],
 
 or:
 
 	'sms' => [
-		'class' => 'Zelenin\Sms',
+		'class' => 'Zelenin\yii\extensions\Sms',
 		'api_id' => '<api_id>',
 		'login' => '<login>',
 		'password' => '<password>'
