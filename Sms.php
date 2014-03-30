@@ -31,7 +31,7 @@ class Sms extends Component
     public function __call($name, $parameters)
     {
         return method_exists($this->sms, $name)
-            ? call_user_func_array(array($this->sms, $name), $parameters)
-            : call_user_func_array(array($this, $name), $parameters);
+            ? call_user_func_array([$this->sms, $name], $parameters)
+            : call_user_func_array([$this, $name], $parameters);
     }
 }
