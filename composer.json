@@ -1,5 +1,5 @@
 {
-	"name": "zelenin/yii2-sms_ru",
+	"name": "johndoejdg/yii2-sms_ru",
 	"description": "Yii2 extension for sms.ru",
 	"version": "0.0.3",
 	"type": "yii2-extension",
@@ -22,7 +22,7 @@
 	"require": {
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "*",
-		"zelenin/smsru": "1.4.2"
+		"johndoejdg/smsru": "master"
 	},
 	"autoload": {
 		"psr-4": {
